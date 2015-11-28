@@ -1,0 +1,102 @@
+/*项目基础样式*/
+
+//变量
+$header_height: 30px;
+
+/*表单输入元素*/
+input, select, textarea
+{
+    height: 32px;
+    border-radius: 0;
+    background-color: transparent;
+    text-indent: 0.5em;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #000;
+    border: 1px solid #000;
+    //@include mx_box-shadow(0 1px 2px 2px rgba(#000, 0.3) inset);
+
+    &[disabled]
+    {
+        opacity: 0.8;
+    }
+}
+
+
+/*placeholder的颜色*/
+::-webkit-input-placeholder
+{
+    color: #555;
+}
+
+
+textarea
+{
+    height: 100px;
+    text-indent: 0;
+    padding: 0.5em;
+}
+
+
+.maxwidth
+{
+    @include mx_maxwidth($width: 320px);
+}
+
+#mainbox
+{
+    @extend %ph_full;
+    overflow: hidden;
+
+    /*btn样式*/
+    /*.btn
+    {
+        $c: #b52c2c;
+        $cf: #f00;
+
+        border-radius: 0;
+        @include mx_box-shadow(none);
+        @include mx_gradient(left, rgba($c, 0) 0%, rgba($c, 1) 30%, rgba($c, 0.95) 50%, rgba($c, 1) 70%, rgba($c, 0) 100%);
+        font-weight: bold;
+        color: #fff;
+        line-height: 36px;
+        background-color: transparent;
+
+        &.focus
+        {
+            @include mx_gradient(left, rgba($cf, 0) 0%, rgba($cf, 1) 30%, rgba($cf, 1) 70%, rgba($cf, 0) 100%);
+        }
+
+        &[disabled]
+        {
+            opacity: 0.5;
+        }
+    }*/
+}
+
+
+body
+{
+    background: $panel-bgcolor;
+}
+
+
+/*一级页面隐藏header*/
+/*
+#header
+{
+    visibility: hidden;
+
+    &.onsubtitle
+    {
+        visibility: visible;
+    }
+
+    @at-root
+    {
+        .panel[data-role=root]
+        {
+            padding: 0;
+        }
+    }
+}*/

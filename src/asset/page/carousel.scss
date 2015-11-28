@@ -1,0 +1,198 @@
+//变量
+//$anitrans-duration: 5s;
+//$animation-duration: 1s;
+$width: 320px;
+
+//引入
+@import "jq/plugin/carousel";
+@import "scss/ani_trans";
+
+/*轮播*/
+#carousel
+{
+    @extend %ph_full;
+    position: relative;
+
+    h1
+    {
+        font-size: 80px;
+    }
+
+    h2
+    {
+        font-size: 60px;
+    }
+
+    h3
+    {
+        font-size: 40px;
+    }
+}
+
+
+/*每一part默认样式*/
+[class^="part"]
+{
+    position: relative;
+    background: url(../img/bg.jpg) center center;
+    background-size: cover;
+
+    &:before
+    {
+        content: '手机端建站课程';
+        display: block;
+        @extend .center;
+        padding: 5px 0;
+        margin-bottom: 40px;
+        border-bottom: 1px dotted $color;
+    }
+
+    & > *
+    {
+        @extend .maxwidth;
+    }
+}
+
+
+.at-item
+{
+    position: static;
+}
+
+
+@at-root
+{
+    $distance: 200px;
+
+    .in_l
+    {
+        @include ani_trans($tx: -$distance);
+    }
+
+
+    .in_t
+    {
+        @include ani_trans($ty: -$distance);
+    }
+
+
+    .in_r
+    {
+        @include ani_trans($tx: $distance);
+    }
+
+
+    .in_b
+    {
+        @include ani_trans($ty: $distance);
+    }
+}
+
+
+@at-root
+{
+    $distance: 60px;
+
+    .ins_l
+    {
+        @include ani_trans($tx: -$distance);
+    }
+
+
+    .ins_t
+    {
+        @include ani_trans($ty: -$distance);
+    }
+
+
+    .ins_r
+    {
+        @include ani_trans($tx: $distance);
+    }
+
+
+    .ins_b
+    {
+        @include ani_trans($ty: $distance);
+    }
+}
+
+
+.part1
+{
+    h3
+    {
+        text-align: left;
+        line-height: 1.3;
+        padding-left: 6%;
+
+        &:first-of-type
+        {
+            padding-top: 20px;
+        }
+
+        &:last-of-type
+        {
+            padding-bottom: 30px;
+        }
+
+        &.selected
+        {
+            color: #ff0;
+        }
+
+        i
+        {
+            display: block;
+            font-size: $font-size;
+            padding-left: 2em;
+            @extend %ph_transall;
+            height: 0;
+            opacity: 0;
+
+            &.visible
+            {
+                height: 30px;
+                opacity: 1;
+            }
+        }
+    }
+
+    &.current
+    {
+        .ins_r
+        {
+            @include ani_delay($baseX: 1);
+        }
+
+        .ins_b
+        {
+            @include ani_delay($baseX: 2);
+        }
+    }
+}
+
+
+.part2
+{
+}
+
+
+.part3
+{
+}
+
+
+.part4
+{
+}
+
+
+.part5
+{
+}
+
+
+.part6
+{
+}

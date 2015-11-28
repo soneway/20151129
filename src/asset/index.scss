@@ -1,0 +1,18 @@
+//变量
+$color: #fff;
+$panel-bgcolor: #000;
+$font-size: 24px;
+//$anitrans-duration: 5s;
+//$animation-duration: 5s;
+
+//引入
+@import "jq/ui/base";
+//@import "jq/ui/ui";
+//@import "jq/ui/body_scroll";
+//@import "jq/plugin/customalert";
+
+//引入基础样式
+@import "lib/base";
+
+//引入面板样式
+@import "page/carousel";
