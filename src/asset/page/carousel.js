@@ -18,7 +18,7 @@
         isShowTitle     : false,
         isAutoPlay      : false,
         removeClassDelay: 300,
-        initIndex       : 4
+        initIndex       : 0
     })[0];
 
 
