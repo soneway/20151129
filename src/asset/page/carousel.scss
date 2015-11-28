@@ -1,11 +1,11 @@
 //变量
 //$anitrans-duration: 5s;
 //$animation-duration: 1s;
-$width: 320px;
-
+//$width: 320px;
 //引入
 @import "jq/plugin/carousel";
 @import "scss/ani_trans";
+
 
 h1
 {
@@ -27,14 +27,14 @@ h3
 
 h4
 {
-    font-size: 30px;
-    text-indent: 1em;
+    font-size: 32px;
+    padding-left: 1em;
 }
 
 
 p
 {
-    text-indent: 2em;
+    padding-left: 2em;
 }
 
 
@@ -56,10 +56,11 @@ p
     &:before
     {
         content: '手机端建站课程';
+        font-size: 20px;
         display: block;
         @extend .center;
         padding: 5px 0;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         border-bottom: 1px dotted $color;
     }
 
@@ -144,12 +145,13 @@ p
     h3
     {
         text-align: left;
-        line-height: 1.3;
-        padding-left: 6%;
+        padding-left: 8%;
 
         &:first-of-type
         {
             padding-top: 20px;
+            line-height: 1.3;
+            padding-bottom: 10px;
         }
 
         &:last-of-type
@@ -166,14 +168,14 @@ p
         {
             display: block;
             font-size: $font-size;
-            padding-left: 2em;
+            padding-left: 1em;
             @extend %ph_transall;
             height: 0;
             opacity: 0;
 
             &.visible
             {
-                height: 30px;
+                height: 32px;
                 opacity: 1;
             }
         }
@@ -194,26 +196,37 @@ p
 }
 
 
-.part2
-{
-}
-
-
-.part3
-{
-}
-
-
 .part4
 {
+    &.current
+    {
+        .ins_b
+        {
+            @include ani_delay($baseX: 2, $len: 4);
+        }
+    }
 }
 
 
 .part5
 {
+    &.current
+    {
+        .ins_b
+        {
+            @include ani_delay($baseX: 2, $len: 5);
+        }
+    }
 }
 
 
-.part6
+.part6, .part7
 {
+    &.current
+    {
+        .ins_b
+        {
+            @include ani_delay($baseX: 2, $len: 5);
+        }
+    }
 }

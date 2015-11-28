@@ -13,12 +13,28 @@
 
     //焦点图特效
     var carouselEl = $('#carousel').carousel({
-        isVertical : true,
-        isShowPager: false,
-        isShowTitle: false,
-        isAutoPlay : false,
-        initIndex  : 2
+        isVertical      : true,
+        isShowPager     : false,
+        isShowTitle     : false,
+        isAutoPlay      : false,
+        removeClassDelay: 300,
+        initIndex       : 4
     })[0];
+
+
+    //上下切换按钮
+    $doc.on('keyup', function (evt) {
+        var keyCode = evt.keyCode;
+
+        //按下
+        if (keyCode === 40) {
+            carouselEl.next();
+        }
+        //按上
+        if (keyCode === 38) {
+            carouselEl.prev();
+        }
+    });
 
 
     (function (partSel) {

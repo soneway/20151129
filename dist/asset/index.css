@@ -111,7 +111,7 @@ body {
   /*可继承*/
   color: #fff;
   line-height: 1.5;
-  font-size: 24px;
+  font-size: 28px;
   font-family: arial, helvetica, sans-serif;
   -webkit-text-size-adjust: none;
   /*禁止选中文本*/
@@ -451,11 +451,11 @@ h3 {
   font-size: 40px; }
 
 h4 {
-  font-size: 30px;
-  text-indent: 1em; }
+  font-size: 32px;
+  padding-left: 1em; }
 
 p {
-  text-indent: 2m; }
+  padding-left: 2em; }
 
 /*轮播*/
 #carousel {
@@ -468,9 +468,10 @@ p {
   background-size: cover; }
   [class^="part"]:before {
     content: '手机端建站课程';
+    font-size: 20px;
     display: block;
     padding: 5px 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     border-bottom: 1px dotted #fff; }
 
 .at-item {
@@ -513,22 +514,23 @@ p {
 
 .part1 h3 {
   text-align: left;
-  line-height: 1.3;
-  padding-left: 6%; }
+  padding-left: 8%; }
   .part1 h3:first-of-type {
-    padding-top: 20px; }
+    padding-top: 20px;
+    line-height: 1.3;
+    padding-bottom: 10px; }
   .part1 h3:last-of-type {
     padding-bottom: 30px; }
   .part1 h3.selected {
     color: #ff0; }
   .part1 h3 i {
     display: block;
-    font-size: 24px;
-    padding-left: 2em;
+    font-size: 28px;
+    padding-left: 1em;
     height: 0;
     opacity: 0; }
     .part1 h3 i.visible {
-      height: 30px;
+      height: 32px;
       opacity: 1; }
 
 .part1.current .ins_r.x1 {
@@ -554,3 +556,59 @@ p {
 .part1.current .ins_b.x3 {
   -webkit-transition-delay: 2.5s;
   transition-delay: 2.5s; }
+
+.part4.current .ins_b.x1 {
+  -webkit-transition-delay: 2.1s;
+  transition-delay: 2.1s; }
+
+.part4.current .ins_b.x2 {
+  -webkit-transition-delay: 2.3s;
+  transition-delay: 2.3s; }
+
+.part4.current .ins_b.x3 {
+  -webkit-transition-delay: 2.5s;
+  transition-delay: 2.5s; }
+
+.part4.current .ins_b.x4 {
+  -webkit-transition-delay: 2.7s;
+  transition-delay: 2.7s; }
+
+.part5.current .ins_b.x1 {
+  -webkit-transition-delay: 2.1s;
+  transition-delay: 2.1s; }
+
+.part5.current .ins_b.x2 {
+  -webkit-transition-delay: 2.3s;
+  transition-delay: 2.3s; }
+
+.part5.current .ins_b.x3 {
+  -webkit-transition-delay: 2.5s;
+  transition-delay: 2.5s; }
+
+.part5.current .ins_b.x4 {
+  -webkit-transition-delay: 2.7s;
+  transition-delay: 2.7s; }
+
+.part5.current .ins_b.x5 {
+  -webkit-transition-delay: 2.9s;
+  transition-delay: 2.9s; }
+
+.part6.current .ins_b.x1, .part7.current .ins_b.x1 {
+  -webkit-transition-delay: 2.1s;
+  transition-delay: 2.1s; }
+
+.part6.current .ins_b.x2, .part7.current .ins_b.x2 {
+  -webkit-transition-delay: 2.3s;
+  transition-delay: 2.3s; }
+
+.part6.current .ins_b.x3, .part7.current .ins_b.x3 {
+  -webkit-transition-delay: 2.5s;
+  transition-delay: 2.5s; }
+
+.part6.current .ins_b.x4, .part7.current .ins_b.x4 {
+  -webkit-transition-delay: 2.7s;
+  transition-delay: 2.7s; }
+
+.part6.current .ins_b.x5, .part7.current .ins_b.x5 {
+  -webkit-transition-delay: 2.9s;
+  transition-delay: 2.9s; }
