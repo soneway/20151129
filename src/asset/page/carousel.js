@@ -17,7 +17,7 @@
         isShowPager: false,
         isShowTitle: false,
         isAutoPlay : false,
-        initIndex  : 0
+        initIndex  : 2
     })[0];
 
 

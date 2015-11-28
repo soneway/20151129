@@ -7,26 +7,42 @@ $width: 320px;
 @import "jq/plugin/carousel";
 @import "scss/ani_trans";
 
+h1
+{
+    font-size: 80px;
+}
+
+
+h2
+{
+    font-size: 60px;
+}
+
+
+h3
+{
+    font-size: 40px;
+}
+
+
+h4
+{
+    font-size: 30px;
+    text-indent: 2em;
+}
+
+
+p
+{
+    text-indent: 4em;
+}
+
+
 /*轮播*/
 #carousel
 {
     @extend %ph_full;
     position: relative;
-
-    h1
-    {
-        font-size: 80px;
-    }
-
-    h2
-    {
-        font-size: 60px;
-    }
-
-    h3
-    {
-        font-size: 40px;
-    }
 }
 
 
@@ -120,6 +136,11 @@ $width: 320px;
 
 .part1
 {
+    *
+    {
+        text-indent: 0;
+    }
+
     h3
     {
         text-align: left;

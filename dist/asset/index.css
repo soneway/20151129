@@ -441,15 +441,25 @@ transform动画函数ani_trans
       -webkit-transition-delay: 3.5s;
       transition-delay: 3.5s; }
 
+h1 {
+  font-size: 80px; }
+
+h2 {
+  font-size: 60px; }
+
+h3 {
+  font-size: 40px; }
+
+h4 {
+  font-size: 30px;
+  text-indent: 2em; }
+
+p {
+  text-indent: 4em; }
+
 /*轮播*/
 #carousel {
   position: relative; }
-  #carousel h1 {
-    font-size: 80px; }
-  #carousel h2 {
-    font-size: 60px; }
-  #carousel h3 {
-    font-size: 40px; }
 
 /*每一part默认样式*/
 [class^="part"] {
@@ -497,6 +507,9 @@ transform动画函数ani_trans
 .ins_b {
   -webkit-transform: translate3d(0, 60px, 0);
   transform: translate3d(0, 60px, 0); }
+
+.part1 * {
+  text-indent: 0; }
 
 .part1 h3 {
   text-align: left;
