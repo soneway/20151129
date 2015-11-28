@@ -7,7 +7,7 @@ var src = './asset/';
 //baseDir
 var baseDir = '/Users/soneway/Sites/static/v2/';
 //是否压缩
-var isPack = 0;
+var isPack = 1;
 //是否PC端
 var isPC = 0;
 //配置对象
